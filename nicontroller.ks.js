@@ -5,8 +5,8 @@ var PLUGIN_INFO =
     <name lang="ja">ニコニコ動画コントローラー</name>
     <description>Control Niconico Douga via KeySnail</description>
     <description lang="ja">ニコニコ動画をKeySnailから操作</description>
-    <version>0.0.1</version>
-    <updateURL></updateURL>
+    <version>0.0.2</version>
+    <updateURL>http://github.com/tkosaka/keysnail-plugin/blob/master/nicontroller.ks.js</updateURL>
     <iconURL></iconURL>
     <author mail="tomohiko.kosaka@gmail.com" homepage="http://tkosaka.blogspot.com/">Tomohiko KOSAKA</author>
     <license>New BSD License</license>
@@ -75,7 +75,7 @@ var PLUGIN_INFO =
     <detail lang="ja"><![CDATA[
 === Usage ===
 
-        ニコニコプレイヤーを操作用にnico*で始まるエクステがあります。
+        ニコニコプレイヤーの操作用にnico*で始まるエクステがあります。
         エクステについては上記の説明をご覧下さい。
             
         また、それぞれのエクステにキーをbindすることも出来ます。
@@ -106,10 +106,10 @@ var PLUGIN_INFO =
         e.g., C-u 10 s は10秒先にシークします。
 
 === 謝辞 ===
-            このプラグインはVimperatorのプラグインのnicontroller.js移植したものです。
+            このプラグインはVimperatorのプラグインのnicontroller.jsを移植したものです。
             nicontroller.jsの作者のjanus_welさんに感謝します。
 === 注意 ===
-            nicommentとnicommandは当方の環境  Mac OSX, Firefox 3.5.5では動いていません。
+            nicommentとnicommandは当方の環境 Mac OSX, Firefox 3.5.5では動いていません。
             皆様のアイディアをお待ちしております。
 ]]></detail>
 </KeySnailPlugin>;
@@ -562,7 +562,7 @@ ext.add("nicoinfo", nicoinfo,
            en: 'Show player information'}));
 
 ext.add("nicopause", nicopause,
-        M({ja: '動画の再成・停止をトグルします',
+        M({ja: '動画の再成・一時停止をトグルします',
            en: 'Toggle play/pause'}));
 
 ext.add("nicomute", nicomute, 
