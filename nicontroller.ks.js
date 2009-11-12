@@ -5,8 +5,8 @@ var PLUGIN_INFO =
     <name lang="ja">ニコニコ動画コントローラー</name>
     <description>Control Niconico Douga via KeySnail</description>
     <description lang="ja">ニコニコ動画をKeySnailから操作</description>
-    <version>0.0.2</version>
-    <updateURL>http://github.com/tkosaka/keysnail-plugin/blob/master/nicontroller.ks.js</updateURL>
+    <version>0.0.3</version>
+    <updateURL>http://github.com/tkosaka/keysnail-plugin/raw/master/nicontroller.ks.js</updateURL>
     <iconURL></iconURL>
     <author mail="tomohiko.kosaka@gmail.com" homepage="http://tkosaka.blogspot.com/">Tomohiko KOSAKA</author>
     <license>New BSD License</license>
@@ -80,7 +80,7 @@ var PLUGIN_INFO =
             
         また、それぞれのエクステにキーをbindすることも出来ます。
         site-local-keymap.ks.jsをインストールして、
-        initファイルのPRESERV部分に下記を追加することをお勧めします。
+        initファイルのPRESERVE部分に下記を追加することをお勧めします。
 
 >||
     local["http://(www|tw|es|de|)\.nicovideo\.jp\/watch/*"] = [
